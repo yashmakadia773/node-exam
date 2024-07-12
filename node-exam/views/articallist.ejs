@@ -1,0 +1,27 @@
+<!-- articleList.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles</title>
+    <!-- Include CSS and any other necessary scripts or stylesheets -->
+</head>
+
+<body>
+    <h1>All Articles</h1>
+    <ul>
+        <% articles.forEach(article=> { %>
+            <li>
+                <%= article.title %> - <%= article.author.name %>
+            </li>
+            <!-- Display other article details as needed -->
+            <% }) %>
+    </ul>
+    <!-- Include navbar.ejs for navigation -->
+    <% include navbar %>
+</body>
+
+</html>
